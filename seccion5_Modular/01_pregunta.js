@@ -8,7 +8,7 @@ Esta función reproducirá el ejercicio solo una vez. ¿Cómo haremos para
 recrear la serie completa?
  */
 
-function reproducirEjercicio(nombreEjercicio, serie, descanso, base = 1) {
+function reproducirEjercicio(nombreEjercicio, serie, base = 1) {
     
     function intervalo() {
         console.log("DESCANSO");
