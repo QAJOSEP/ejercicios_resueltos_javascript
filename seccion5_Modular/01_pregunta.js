@@ -8,44 +8,8 @@ Esta función reproducirá el ejercicio solo una vez. ¿Cómo haremos para
 recrear la serie completa?
  */
 
-function reproducirEjercicio(nombreEjercicio, serie, base = 1) {
-    
-    function intervalo() {
-        console.log("DESCANSO");
-    }
+function reproducirEjercicio(nombreEjercicio) {
 
-    function primerSerie(serie) {
-        if (serie == 1) {
-            for (let i = 0; i < 12; i++) {
-                console.log(nombreEjercicio, " repetición número ", base++);
-            }
-        }        
-    }
-
-    function segundaSerie(serie, base = 1) {
-        if (serie == 2) {
-            for (let i = 0; i < 10; i++) {
-                console.log("repetición número ", base++);
-            }
-        }
-    }
-
-    function terceraSerie(serie, base = 1) {
-
-        if (serie == 3) {
-            for (let i = 0; i < 8; i++) {
-                console.log("repetición número ", base++);
-            }
-            
-        }
-    }
-
-    for (let i = 0; i < 1; i++) {
-        primerSerie(1)
-        intervalo(segundaSerie, 3000)
-        segundaSerie(2)
-        terceraSerie(3)
-    }
+    console.log("reproducir video ",nombreEjercicio);
 }
-
-reproducirEjercicio("Hip Thrust", 1, "45 segundos");
+reproducirEjercicio("Hip Thrust")
